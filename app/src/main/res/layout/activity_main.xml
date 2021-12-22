@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextcelsus"
+        android:layout_width="306dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Temperature en celsus "
+        android:inputType="numberDecimal"
+        android:textColorHint="#0B0B0B"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextfehent"
+        android:layout_width="313dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="temperature en farheneit"
+        android:inputType="numberDecimal"
+        android:textColorHint="#101010"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextcelsus" />
+
+    <Button
+        android:id="@+id/buttonconvertir"
+        android:layout_width="165dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="60dp"
+        android:text="Convertir "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextfehent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginTop="120dp"
+        android:text="Convertir temperature"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
